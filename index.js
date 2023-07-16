@@ -1,3 +1,5 @@
+window.onload = () => getRandomCard();
+
 let numberEl = document.getElementById('number-el');
 let topIconEl = document.getElementById('top-icon');
 let bottomIconEl = document.getElementById('bottom-icon');
@@ -11,15 +13,22 @@ function getRandomCard() {
     let numberIndex = Math.floor(Math.random() * numbers.length);
 
     
-    let icon = icons[iconIndex];
-    let number = numbers[numberIndex];
+    let iconForTheCard = icons[iconIndex];
+    let numberForTheCard = numbers[numberIndex];
 
     
-    topIconEl.textContent = icon;
-    bottomIconEl.textContent = icon;
+    topIconEl.textContent = iconForTheCard;
+    bottomIconEl.textContent = iconForTheCard;
 
-    
-    numberEl.textContent = number;
+    if (iconForTheCard === '♠' || iconForTheCard === '♣') {
+        topIconEl.style.color = 'black';
+        bottomIconEl.style.color = 'black';
+    } else {
+        topIconEl.style.color = 'red';
+        bottomIconEl.style.color = 'red';
+    }
+
+    numberEl.textContent = numberForTheCard;
 }
 
 getRandomCard();
