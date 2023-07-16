@@ -17,9 +17,6 @@ function getRandomCard() {
     let numberForTheCard = numbers[numberIndex];
 
     
-    topIconEl.textContent = iconForTheCard;
-    bottomIconEl.textContent = iconForTheCard;
-
     if (iconForTheCard === '♠' || iconForTheCard === '♣') {
         topIconEl.style.color = 'black';
         bottomIconEl.style.color = 'black';
@@ -28,6 +25,8 @@ function getRandomCard() {
         bottomIconEl.style.color = 'red';
     }
 
+    topIconEl.textContent = iconForTheCard;
+    bottomIconEl.textContent = iconForTheCard;
     numberEl.textContent = numberForTheCard;
 }
 

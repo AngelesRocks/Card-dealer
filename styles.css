@@ -20,14 +20,12 @@ html, body {
 }   
 
 #top-icon {
-    color: rgb(255, 0, 0);
     position: absolute;
     top: 5px;
     left: 15px;
 }
 
 #bottom-icon{
-    color: rgb(255, 0, 0);
     position: absolute;
     bottom: 5px;
     right: 15px;
