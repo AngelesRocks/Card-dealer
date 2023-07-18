@@ -1,4 +1,5 @@
 window.onload = () => getRandomCard();
+document.getElementById('container').addEventListener('click', getRandomCard);
 
 let numberEl = document.getElementById('number-el');
 let topIconEl = document.getElementById('top-icon');

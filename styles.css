@@ -3,9 +3,10 @@ html, body {
     display: grid;
 }
 
-.container {
+#container {
     display: grid;
     justify-content: center;
+    cursor: pointer;
 }
 
 #poker-card {
